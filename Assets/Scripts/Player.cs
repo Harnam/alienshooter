@@ -12,7 +12,7 @@ public class Player : MonoBehaviour
 
     private float movementX;
 
-    private bool isAlive = true;
+    public bool isAlive = true;
 
     private Rigidbody2D rigid;
 

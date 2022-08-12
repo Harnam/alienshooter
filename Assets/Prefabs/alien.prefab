@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 9020398636373236940}
   - component: {fileID: 1020585075949359884}
   - component: {fileID: 6693320455055157456}
+  - component: {fileID: 4235213603651288721}
   m_Layer: 0
   m_Name: alien
   m_TagString: Enemy
@@ -101,3 +102,15 @@ CircleCollider2D:
   m_Offset: {x: 0.094361134, y: 0}
   serializedVersion: 2
   m_Radius: 0.8387728
+--- !u!114 &4235213603651288721
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8516218511423820009}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bdfe7780d8a6249069d2557e4c826e83, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
