@@ -584,7 +584,7 @@ GameObject:
   - component: {fileID: 726313094}
   m_Layer: 0
   m_Name: bottom
-  m_TagString: Untagged
+  m_TagString: ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1473,6 +1473,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   startscreen: {fileID: 1858523944}
+  platformPrefab: {fileID: 7931207992292509643, guid: 38445ee241fb941f181f7738a2cb3793, type: 3}
+  playerPrefab: {fileID: 4622107831264759917, guid: d87a17fd2c8dc4aeda67bcd468cc2d2c, type: 3}
 --- !u!4 &1538667215
 Transform:
   m_ObjectHideFlags: 0
