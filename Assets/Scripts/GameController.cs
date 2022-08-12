@@ -8,9 +8,9 @@ public class GameController : MonoBehaviour
     private GameObject startscreen;
 
     [SerializeField]
-    private GameObject platformPrefab, playerPrefab;
+    private GameObject platformPrefab, playerPrefab, portalPrefab;
 
-    private GameObject platforms, player = null;
+    private GameObject platforms, player, portal = null;
 
     // Start is called before the first frame update
     void Start()
@@ -30,6 +30,7 @@ public class GameController : MonoBehaviour
         startscreen.SetActive(false);
         platforms = Instantiate(platformPrefab);
         player = Instantiate(playerPrefab);
+        portal = Instantiate(portalPrefab);
     }
 
     public void restartGame()

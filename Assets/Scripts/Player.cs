@@ -65,6 +65,6 @@ public class Player : MonoBehaviour
 
     void playerDie()
     {
-
+        isAlive = false;
     }
 }

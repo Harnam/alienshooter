@@ -1475,6 +1475,7 @@ MonoBehaviour:
   startscreen: {fileID: 1858523944}
   platformPrefab: {fileID: 7931207992292509643, guid: 38445ee241fb941f181f7738a2cb3793, type: 3}
   playerPrefab: {fileID: 4622107831264759917, guid: d87a17fd2c8dc4aeda67bcd468cc2d2c, type: 3}
+  portalPrefab: {fileID: 160449116551253350, guid: e6b6f631578e8450e84035de09dc3ed3, type: 3}
 --- !u!4 &1538667215
 Transform:
   m_ObjectHideFlags: 0
