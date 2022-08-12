@@ -10,6 +10,9 @@ public class Player : MonoBehaviour
     [SerializeField]
     private float jumpForce = 11f;
 
+    [SerializeField]
+    private SpriteRenderer sr;
+
     private float movementX;
 
     public bool isAlive = true;
@@ -31,7 +34,7 @@ public class Player : MonoBehaviour
         if (isAlive)
         {
             PlayerMove();
-            //AnimatePlayer();
+            if (movementX != 0) sr.flipX = (movementX < 0);
             PlayerJump();
         }
     }
