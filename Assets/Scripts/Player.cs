@@ -13,6 +13,9 @@ public class Player : MonoBehaviour
     [SerializeField]
     private SpriteRenderer sr;
 
+    [SerializeField]
+    private Transform cannon;
+
     private float movementX;
 
     public bool isAlive = true;
@@ -36,6 +39,10 @@ public class Player : MonoBehaviour
             PlayerMove();
             if (movementX != 0) sr.flipX = (movementX < 0);
             PlayerJump();
+            Vector2 canpos = Camera.main.WorldToScreenPoint(cannon.position);
+            Vector2 mousepos = Input.mousePosition;
+            float angle = Mathf.Atan2(mousepos.y - canpos.y, mousepos.x - canpos.x) * Mathf.Rad2Deg;
+            cannon.rotation = Quaternion.AngleAxis(angle, Vector3.forward);
         }
     }
 
