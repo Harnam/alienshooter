@@ -5,7 +5,7 @@ using UnityEngine;
 public class GameController : MonoBehaviour
 {
     [SerializeField]
-    private GameObject startscreen, restartscreen;
+    private GameObject startscreen, restartscreen, gamescreen;
 
     [SerializeField]
     private GameObject platformPrefab, playerPrefab, portalPrefab;
@@ -34,6 +34,7 @@ public class GameController : MonoBehaviour
         Debug.Log("Start Game");
         startscreen.SetActive(false);
         instGO();
+        gamescreen.SetActive(true);
     }
 
     void instGO()
@@ -49,6 +50,7 @@ public class GameController : MonoBehaviour
         Destroy(player);
         Destroy(portal);
         DestroyAliens?.Invoke();
+        gamescreen.SetActive(false);
         restartscreen.SetActive(true);
     }
 
@@ -56,6 +58,7 @@ public class GameController : MonoBehaviour
     {
         Debug.Log("reStart Game");
         restartscreen.SetActive(false);
+        gamescreen.SetActive(true);
         instGO();
     }
 
