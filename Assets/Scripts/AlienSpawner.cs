@@ -22,7 +22,8 @@ public class AlienSpawner : MonoBehaviour
         {
             GameObject alien = Instantiate(alienPrefab);
             alien.transform.position = transform.position;
-            yield return new WaitForSeconds(iniTime);
+            Debug.Log(iniTime / (1 + GameController.score * 0.1f));
+            yield return new WaitForSeconds(iniTime / (1 + GameController.score * 0.1f));
         }
     }
 }
