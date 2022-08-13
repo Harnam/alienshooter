@@ -14,7 +14,10 @@ public class Player : MonoBehaviour
     private SpriteRenderer sr;
 
     [SerializeField]
-    private Transform cannon;
+    private Transform cannon, bulletpos;
+
+    [SerializeField]
+    private GameObject cannonball;
 
     private float movementX;
 
@@ -43,6 +46,12 @@ public class Player : MonoBehaviour
             Vector2 mousepos = Input.mousePosition;
             float angle = Mathf.Atan2(mousepos.y - canpos.y, mousepos.x - canpos.x) * Mathf.Rad2Deg;
             cannon.rotation = Quaternion.AngleAxis(angle, Vector3.forward);
+            if (Input.GetButtonDown("Fire1"))
+            {
+                GameObject bullet = Instantiate(cannonball);
+                bullet.transform.position = bulletpos.position;
+                bullet.transform.rotation = cannon.rotation;
+            }
         }
     }
 
